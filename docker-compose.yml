@@ -58,6 +58,8 @@ mongo:
         - ./volumes/mongo/log:/var/log/mongodb
         - ./volumes/mongo/data:/var/lib/mongodb
     environment:
+        MONGODB_DATABASE: admin
+        MONGODB_USER: admin
         MONGODB_PASS: 123456
         TZ: Asia/Chongqing
     restart: always

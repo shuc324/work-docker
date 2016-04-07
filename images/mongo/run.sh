@@ -9,7 +9,7 @@ fi
 # 判断是否设置过密码
 if [ ! -f /data/mongodb/.setted_mongodb_password ]; then
     USER=${MONGODB_USER:-"admin"}
-    DATABASE=${MONGODB_DATABASE:-"root"}
+    DATABASE=${MONGODB_DATABASE:-"admin"}
     PASS=${MONGODB_PASS:-123456}
     
     # 设置admin密码
