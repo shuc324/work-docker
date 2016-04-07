@@ -198,3 +198,11 @@ PHP message: PHP Fatal error:  require(): Failed opening required 'core/bootstra
 PHP message: PHP Stack trace:
 PHP message: PHP   1. {main}() /var/www/tsb-server/app/index.php:0
 PHP message: PHP   2. require() /var/www/tsb-server/app/index.php:25" while reading response header from upstream, client: 192.168.99.1, server: app.tsb.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.2:9000", host: "app.tsb.com"
+2016/04/07 16:00:58 [error] 8#0: *38 FastCGI sent in stderr: "PHP message: PHP Warning:  require(core/bootstrap.php): failed to open stream: No such file or directory in /var/www/tsb-server/app/webroot/index.php on line 67
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/tsb-server/app/index.php:0
+PHP message: PHP   2. require() /var/www/tsb-server/app/index.php:25
+PHP message: PHP Fatal error:  require(): Failed opening required 'core/bootstrap.php' (include_path='/var/www/tsb-server/../cola:/var/www/tsb-server/app/:/var/www/tsb-server/app/vendors:/var/www/tsb-server/app/services:/var/www/tsb-server/../cola/vendors:.:/usr/share/php:/usr/share/pear') in /var/www/tsb-server/app/webroot/index.php on line 67
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/tsb-server/app/index.php:0
+PHP message: PHP   2. require() /var/www/tsb-server/app/index.php:25" while reading response header from upstream, client: 192.168.99.1, server: app.tsb.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.2:9000", host: "app.tsb.com"

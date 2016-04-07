@@ -46,17 +46,18 @@ nginx:
 #     # volumes:
 #     #     - ./volumes/mysql:/etc/mysql
 #     environment:
-#         MYSQL_ROOT_PASSWORD: root
+#         MYSQL_ROOT_PASSWORD: 123456
 #         TZ: Asia/Chongqing
 #     restart: always
-# mongo:
-#     build: ./images/mongo
-#     container_name: mongo
-#     ports:
-#         - "27017:27017"
-#     volumes:
-#         - ./volumes/mongo/data:/data/db
-#     environment:
-#         MONGODB_PASS: root
-#         TZ: Asia/Chongqing
-#     restart: always
+mongo:
+    build: ./images/mongo
+    container_name: mongo
+    ports:
+        - "27017:27017"
+    volumes:
+        - ./volumes/mongo/log:/var/log/mongodb
+        - ./volumes/mongo/data:/var/lib/mongodb
+    environment:
+        MONGODB_PASS: 123456
+        TZ: Asia/Chongqing
+    restart: always
