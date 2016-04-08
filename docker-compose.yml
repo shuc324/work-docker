@@ -8,7 +8,7 @@ php:
         - ./volumes/php/bin:/usr/local/bin
         - ./volumes/composer:/root/.composer
     environment:
-        TZ: Asia/Chongqing
+        TZ: Asia/Shanghai
     restart: always
 nginx:
     build: ./images/nginx
@@ -24,31 +24,29 @@ nginx:
         - ./volumes/nginx/logs:/var/log/nginx
         - ./volumes/nginx/includes:/etc/nginx/includes
     environment:
-        TZ: Asia/Chongqing
+        TZ: Asia/Shanghai
     extra_hosts:
         - "app.tsb.com:127.0.0.1"
     restart: always
-# redis:
-#     build: ./images/redis
-#     container_name: redis
-#     ports:
-#         - "6379:6379"
-#     volumes:
-#         - ./volumes/redis/data:/data
-#     environment:
-#         TZ: Asia/Chongqing
-#     restart: always
-# mysql:
-#     build: ./images/mysql
-#     container_name: mysql
-#     ports:
-#         - "3306:3306"
-#     # volumes:
-#     #     - ./volumes/mysql:/etc/mysql
-#     environment:
-#         MYSQL_ROOT_PASSWORD: 123456
-#         TZ: Asia/Chongqing
-#     restart: always
+redis:
+    build: ./images/redis
+    container_name: tsb_redis
+    ports:
+        - "6379:6379"
+    volumes:
+        - ./volumes/redis/data:/data
+    environment:
+        TZ: Asia/Shanghai
+    restart: always
+mysql:
+    build: ./images/mysql
+    container_name: tsb_mysql
+    ports:
+        - "3306:3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: 123456
+        TZ: Asia/Shanghai
+    restart: always
 mongo:
     build: ./images/mongo
     container_name: tsb_mongo
@@ -60,5 +58,5 @@ mongo:
         MONGODB_DATABASE: admin
         MONGODB_USER: admin
         MONGODB_PASS: 123456
-        TZ: Asia/Chongqing
+        TZ: Asia/Shanghai
     restart: always
