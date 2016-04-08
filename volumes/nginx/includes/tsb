@@ -1,5 +1,6 @@
 location / {
-    try_files $uri $uri/ /index.php?$uri&$args;    
+    # try_files $uri $uri/ /index.php?$uri&$args;    
+    rewrite ^(.*)$ /index.php?url=$1 last;
 }
 
 location ~ \.php$ {
