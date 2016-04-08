@@ -12,17 +12,19 @@ RUN echo "deb http://mirrors.163.com/ubuntu/ trusty-backports main restricted un
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 RUN echo 'deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse' | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
 RUN apt-get update && apt-get install -y mongodb-org=3.0.0 mongodb-org-server=3.0.0 mongodb-org-shell=3.0.0 mongodb-org-mongos=3.0.0 mongodb-org-tools=3.0.0
-
 RUN rm -rf /var/lib/apt/lists/*
-RUN echo "export LC_ALL=\"C\"" >> ~/.bashrc
 
 # 更改配置
+RUN sed -Ei 's/^(dbpath=\/var\/lib\/mongodb)/dbpath=\/data\/db/' /etc/mongod.conf
+RUN sed -Ei 's/^(logpath=\/var\/log\/mongodb\/mongod.log)/logpath=\/data\/mongodb\/mongod.log/' /etc/mongod.conf
 RUN sed -Ei 's/^(#port)/port/' /etc/mongod.conf
 RUN sed -Ei 's/^(bind_ip)/#&/' /etc/mongod.conf
 RUN sed -Ei 's/^(#auth)/auth/' /etc/mongod.conf
 RUN sed -Ei 's/^(# nojournal)/nojournal/' /etc/mongod.conf
 
 ADD run.sh /run.sh
+RUN echo "export LC_ALL=\"C\"" >> ~/.bashrc
+RUN mkdir -p /data/mongodb /data/db
 RUN chmod 755 /run.sh /data/mongodb /data/db
 
 EXPOSE 27017

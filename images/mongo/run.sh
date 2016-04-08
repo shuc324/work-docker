@@ -1,20 +1,23 @@
 #!/bin/bash
-if [ -f /var/lib/mongodb/mongod.lock ]; then
-    rm -rf /var/lib/mongodb/mongod.lock
+if [ -f /data/db/mongod.lock ]; then
+    rm -rf /data/db/mongod.lock
 fi
 
-# 启动mongodb
 /usr/bin/mongod -f /etc/mongod.conf &
 
-# 判断是否设置过密码
-if [ ! -f /data/mongodb/.setted_mongodb_password ]; then
+RET=1
+while [[ RET -ne 0 ]]; do
+    sleep 5
+    mongo admin --eval "help" >/dev/null 2>&1
+    RET=$?
+done
+
+if [ ! -f /data/db/.setted_mongodb_password ]; then
     USER=${MONGODB_USER:-"admin"}
     DATABASE=${MONGODB_DATABASE:-"admin"}
-    PASS=${MONGODB_PASS:-123456}
-    
-    # 设置admin密码
+    PASS=${MONGODB_PASS:-"123456"}
     mongo admin --eval "db.createUser({user: '$USER', pwd: '$PASS', roles:[{role:'root',db:'admin'}]});"
-    
+
     if [ "$DATABASE" != "admin" ]; then
         mongo admin -u $USER -p $PASS << EOF
 use $DATABASE
@@ -22,5 +25,5 @@ db.createUser({user: '$USER', pwd: '$PASS', roles:[{role:'dbOwner',db:'$DATABASE
 EOF
     fi
 
-    touch /data/mongodb/.setted_mongodb_password
+    touch /data/db/.setted_mongodb_password
 fi

@@ -1,0 +1,1286 @@
+2016-04-08T11:47:36.028+0800 I CONTROL  [initandlisten] MongoDB starting : pid=5 port=27017 dbpath=/data/db 64-bit host=76b5d28058fd
+2016-04-08T11:47:36.029+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T11:47:36.030+0800 I CONTROL  [initandlisten] 
+2016-04-08T11:47:36.030+0800 I CONTROL  [initandlisten] 
+2016-04-08T11:47:36.030+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T11:47:36.031+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T11:47:36.032+0800 I CONTROL  [initandlisten] 
+2016-04-08T11:47:36.032+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T11:47:36.033+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T11:47:36.033+0800 I CONTROL  [initandlisten] 
+2016-04-08T11:47:36.034+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T11:47:36.035+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T11:47:36.035+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T11:47:36.035+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T11:47:36.036+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T11:47:36.036+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T11:47:36.051+0800 I INDEX    [initandlisten] allocating new ns file /data/db/local.ns, filling with zeroes...
+2016-04-08T11:47:36.082+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/local.0, filling with zeroes...
+2016-04-08T11:47:36.082+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T11:47:36.082+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/local.0, size: 64MB,  took 0 secs
+2016-04-08T11:47:36.083+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T11:48:46.021+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:52194 #1 (1 connection now open)
+2016-04-08T11:48:46.027+0800 I ACCESS   [conn1] SCRAM-SHA-1 authentication failed for admin on admin ; UserNotFound Could not find user admin@admin
+2016-04-08T11:48:46.029+0800 I NETWORK  [conn1] end connection 192.168.99.1:52194 (0 connections now open)
+2016-04-08T11:49:03.325+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56983 #2 (1 connection now open)
+2016-04-08T11:49:03.325+0800 I ACCESS   [conn2] note: no users configured in admin.system.users, allowing localhost access
+2016-04-08T11:49:03.327+0800 I ACCESS   [conn2] SCRAM-SHA-1 authentication failed for admin on admin ; UserNotFound Could not find user admin@admin
+2016-04-08T11:49:03.331+0800 I NETWORK  [conn2] end connection 127.0.0.1:56983 (0 connections now open)
+2016-04-08T11:49:08.895+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56984 #3 (1 connection now open)
+2016-04-08T11:49:08.898+0800 I ACCESS   [conn3] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T11:49:12.901+0800 I NETWORK  [conn3] end connection 127.0.0.1:56984 (0 connections now open)
+2016-04-08T11:49:19.265+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:52195 #4 (1 connection now open)
+2016-04-08T11:49:19.267+0800 I NETWORK  [conn4] end connection 192.168.99.1:52195 (0 connections now open)
+2016-04-08T11:49:23.739+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:52196 #5 (1 connection now open)
+2016-04-08T11:49:23.740+0800 I ACCESS   [conn5] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T11:49:23.741+0800 I ACCESS   [conn5] Unauthorized not authorized on admin to execute command { replSetGetStatus: 1.0, forShell: 1.0 }
+2016-04-08T11:49:30.174+0800 I NETWORK  [conn5] end connection 192.168.99.1:52196 (0 connections now open)
+2016-04-08T11:51:36.431+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:52215 #6 (1 connection now open)
+2016-04-08T11:51:36.432+0800 I ACCESS   [conn6] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T11:51:36.433+0800 I ACCESS   [conn6] Unauthorized not authorized on admin to execute command { replSetGetStatus: 1.0, forShell: 1.0 }
+2016-04-08T12:18:58.000+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:18:58.003+0800 I CONTROL  [initandlisten] MongoDB starting : pid=65 port=27017 dbpath=/data/db 64-bit host=76b5d28058fd
+2016-04-08T12:18:58.003+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:18:58.003+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:18:58.003+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:18:58.003+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:18:58.003+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:18:58.004+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:18:58.004+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:18:58.004+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:18:58.004+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:18:58.004+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:18:58.004+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:18:58.004+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:18:58.004+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:18:58.004+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:18:58.005+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:18:58.008+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+2016-04-08T12:18:58.008+0800 E NETWORK  [initandlisten]   addr already in use
+2016-04-08T12:18:58.028+0800 I CONTROL  [initandlisten] now exiting
+2016-04-08T12:18:58.029+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2016-04-08T12:18:58.029+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2016-04-08T12:18:58.029+0800 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2016-04-08T12:18:58.029+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-08T12:18:58.029+0800 I STORAGE  [initandlisten] shutdown: closing all files...
+2016-04-08T12:18:58.029+0800 I STORAGE  [initandlisten] closeAllFiles() finished
+2016-04-08T12:18:58.029+0800 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2016-04-08T12:18:58.030+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
+2016-04-08T12:19:03.203+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56986 #7 (2 connections now open)
+2016-04-08T12:19:03.204+0800 I ACCESS   [conn7] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:19:09.177+0800 I NETWORK  [conn7] end connection 127.0.0.1:56986 (1 connection now open)
+2016-04-08T12:19:11.472+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:19:11.475+0800 I CONTROL  [initandlisten] MongoDB starting : pid=83 port=27017 dbpath=/data/db 64-bit host=76b5d28058fd
+2016-04-08T12:19:11.475+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:19:11.475+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:19:11.475+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:19:11.475+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:19:11.475+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:19:11.475+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:19:11.476+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:19:11.476+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:19:11.476+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:19:11.476+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:19:11.476+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:19:11.476+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:19:11.476+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:19:11.476+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:19:11.477+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:19:11.480+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+2016-04-08T12:19:11.480+0800 E NETWORK  [initandlisten]   addr already in use
+2016-04-08T12:19:11.486+0800 I CONTROL  [initandlisten] now exiting
+2016-04-08T12:19:11.486+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2016-04-08T12:19:11.486+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2016-04-08T12:19:11.486+0800 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2016-04-08T12:19:11.487+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-08T12:19:11.487+0800 I STORAGE  [initandlisten] shutdown: closing all files...
+2016-04-08T12:19:11.487+0800 I STORAGE  [initandlisten] closeAllFiles() finished
+2016-04-08T12:19:11.487+0800 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2016-04-08T12:19:11.487+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
+2016-04-08T12:19:30.808+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:19:30.811+0800 I CONTROL  [initandlisten] MongoDB starting : pid=97 port=27017 dbpath=/data/db 64-bit host=76b5d28058fd
+2016-04-08T12:19:30.811+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:19:30.811+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:19:30.811+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:19:30.811+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:19:30.811+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:19:30.812+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:19:30.812+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:19:30.812+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:19:30.812+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:19:30.812+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:19:30.812+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:19:30.812+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:19:30.812+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:19:30.812+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:19:30.812+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:19:30.816+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+2016-04-08T12:19:30.816+0800 E NETWORK  [initandlisten]   addr already in use
+2016-04-08T12:19:30.823+0800 I CONTROL  [initandlisten] now exiting
+2016-04-08T12:19:30.824+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2016-04-08T12:19:30.824+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2016-04-08T12:19:30.824+0800 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2016-04-08T12:19:30.824+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-08T12:19:30.824+0800 I STORAGE  [initandlisten] shutdown: closing all files...
+2016-04-08T12:19:30.824+0800 I STORAGE  [initandlisten] closeAllFiles() finished
+2016-04-08T12:19:30.824+0800 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2016-04-08T12:19:30.825+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
+2016-04-08T12:19:35.769+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56987 #8 (2 connections now open)
+2016-04-08T12:19:35.771+0800 I ACCESS   [conn8] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:19:37.779+0800 I NETWORK  [conn8] end connection 127.0.0.1:56987 (1 connection now open)
+2016-04-08T12:19:43.810+0800 I NETWORK  [conn6] end connection 192.168.99.1:52215 (0 connections now open)
+2016-04-08T12:19:45.119+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:52342 #9 (1 connection now open)
+2016-04-08T12:19:45.120+0800 I ACCESS   [conn9] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:19:45.121+0800 I ACCESS   [conn9] Unauthorized not authorized on admin to execute command { replSetGetStatus: 1.0, forShell: 1.0 }
+2016-04-08T12:20:08.153+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56988 #10 (2 connections now open)
+2016-04-08T12:20:08.155+0800 I ACCESS   [conn10] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:20:10.194+0800 I NETWORK  [conn10] end connection 127.0.0.1:56988 (1 connection now open)
+2016-04-08T12:20:13.130+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:20:13.133+0800 I CONTROL  [initandlisten] MongoDB starting : pid=122 port=27017 dbpath=/data/db 64-bit host=76b5d28058fd
+2016-04-08T12:20:13.133+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:20:13.133+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:20:13.133+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:20:13.133+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:20:13.133+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:20:13.134+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:20:13.134+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:20:13.134+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:20:13.134+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:20:13.134+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:20:13.134+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:20:13.134+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:20:13.135+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:20:13.135+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:20:13.136+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:20:13.138+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+2016-04-08T12:20:13.138+0800 E NETWORK  [initandlisten]   addr already in use
+2016-04-08T12:20:13.144+0800 I CONTROL  [initandlisten] now exiting
+2016-04-08T12:20:13.144+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2016-04-08T12:20:13.144+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2016-04-08T12:20:13.145+0800 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2016-04-08T12:20:13.145+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-08T12:20:13.145+0800 I STORAGE  [initandlisten] shutdown: closing all files...
+2016-04-08T12:20:13.145+0800 I STORAGE  [initandlisten] closeAllFiles() finished
+2016-04-08T12:20:13.145+0800 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2016-04-08T12:20:13.145+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
+2016-04-08T12:20:15.496+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56989 #11 (2 connections now open)
+2016-04-08T12:20:15.498+0800 I ACCESS   [conn11] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:20:17.298+0800 I NETWORK  [conn11] end connection 127.0.0.1:56989 (1 connection now open)
+2016-04-08T12:20:59.114+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:20:59.118+0800 I CONTROL  [initandlisten] MongoDB starting : pid=141 port=27017 dbpath=/data/db 64-bit host=76b5d28058fd
+2016-04-08T12:20:59.118+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:20:59.119+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:20:59.119+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:20:59.119+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:20:59.119+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:20:59.119+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:20:59.119+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:20:59.119+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:20:59.119+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:20:59.119+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:20:59.119+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:20:59.119+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:20:59.120+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:20:59.120+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:20:59.120+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:20:59.123+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+2016-04-08T12:20:59.123+0800 E NETWORK  [initandlisten]   addr already in use
+2016-04-08T12:20:59.129+0800 I CONTROL  [initandlisten] now exiting
+2016-04-08T12:20:59.129+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2016-04-08T12:20:59.129+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2016-04-08T12:20:59.129+0800 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2016-04-08T12:20:59.129+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-08T12:20:59.129+0800 I STORAGE  [initandlisten] shutdown: closing all files...
+2016-04-08T12:20:59.130+0800 I STORAGE  [initandlisten] closeAllFiles() finished
+2016-04-08T12:20:59.130+0800 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2016-04-08T12:20:59.130+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
+2016-04-08T12:21:34.981+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:21:34.984+0800 I CONTROL  [initandlisten] MongoDB starting : pid=158 port=27017 dbpath=/data/db 64-bit host=76b5d28058fd
+2016-04-08T12:21:34.984+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:21:34.984+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:21:34.984+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:21:34.984+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:21:34.985+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:21:34.985+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:21:34.985+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:21:34.985+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:21:34.985+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:21:34.985+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:21:34.985+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:21:34.985+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:21:34.985+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:21:34.985+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:21:34.986+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:21:34.988+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+2016-04-08T12:21:34.988+0800 E NETWORK  [initandlisten]   addr already in use
+2016-04-08T12:21:34.995+0800 I CONTROL  [initandlisten] now exiting
+2016-04-08T12:21:34.995+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2016-04-08T12:21:34.995+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2016-04-08T12:21:34.995+0800 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2016-04-08T12:21:34.995+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-08T12:21:34.995+0800 I STORAGE  [initandlisten] shutdown: closing all files...
+2016-04-08T12:21:34.996+0800 I STORAGE  [initandlisten] closeAllFiles() finished
+2016-04-08T12:21:34.996+0800 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2016-04-08T12:21:34.996+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
+2016-04-08T12:22:21.695+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:22:21.699+0800 I CONTROL  [initandlisten] MongoDB starting : pid=174 port=27017 dbpath=/data/db 64-bit host=76b5d28058fd
+2016-04-08T12:22:21.699+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:22:21.700+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:22:21.700+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:22:21.701+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:22:21.701+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:22:21.702+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:22:21.703+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:22:21.703+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:22:21.704+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:22:21.704+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:22:21.704+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:22:21.705+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:22:21.705+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:22:21.706+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:22:21.707+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:22:21.711+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+2016-04-08T12:22:21.711+0800 E NETWORK  [initandlisten]   addr already in use
+2016-04-08T12:22:21.726+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56990 #12 (2 connections now open)
+2016-04-08T12:22:21.726+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2016-04-08T12:22:21.728+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2016-04-08T12:22:21.729+0800 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2016-04-08T12:22:21.730+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-08T12:22:21.730+0800 I STORAGE  [initandlisten] shutdown: closing all files...
+2016-04-08T12:22:21.732+0800 I STORAGE  [initandlisten] closeAllFiles() finished
+2016-04-08T12:22:21.732+0800 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2016-04-08T12:2016-04-08T12:22:21.740+0800 I INDEX    [conn12] allocating new ns file /data/db/admin.ns, filling with zeroes...
+2016-04-08T12:22:21.763+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/admin.0, filling with zeroes...
+2016-04-08T12:22:21.763+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T12:22:21.764+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/admin.0, size: 64MB,  took 0 secs
+2016-04-08T12:22:21.766+0800 I INDEX    [conn12] build index on: admin.system.users properties: { v: 1, unique: true, key: { user: 1, db: 1 }, name: "user_1_db_1", ns: "admin.system.users" }
+2016-04-08T12:22:21.766+0800 I INDEX    [conn12] 	 building index using bulk method
+2016-04-08T12:22:21.766+0800 I INDEX    [conn12] build index done.  scanned 0 total records. 0 secs
+2016-04-08T12:22:21.771+0800 I NETWORK  [conn12] end connection 127.0.0.1:56990 (1 connection now open)
+2016-04-08T12:22:48.558+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:22:48.562+0800 I CONTROL  [initandlisten] MongoDB starting : pid=195 port=27017 dbpath=/data/db 64-bit host=76b5d28058fd
+2016-04-08T12:22:48.562+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:22:48.562+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:22:48.563+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:22:48.564+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:22:48.564+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:22:48.564+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:22:48.565+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:22:48.566+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:22:48.566+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:22:48.567+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:22:48.567+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:22:48.568+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:22:48.569+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:22:48.569+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:22:48.570+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:22:48.573+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+2016-04-08T12:22:48.574+0800 E NETWORK  [initandlisten]   addr already in use
+2016-04-08T12:22:48.590+0800 I CONTROL  [initandlisten] now exiting
+2016-04-08T12:22:48.594+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56991 #13 (2 connections now open)
+2016-04-08T12:22:48.594+0800 I NETWORK  [initandlisten] shutdown: going to close listening s2016-04-08T12:22:48.595+0800 I ACCESS   [conn13] Unauthorized not authorized on admin to execute command { createUser: "admin", pwd: "xxx", roles: [ { role: "root", db: "admin" } ], digestPassword: false, writeConcern: { w: "majority", wtimeout: 30000.0 } }
+2016-04-08T12:22:48.595+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-08T12:22:48.597+0800 I STORAGE  [initandlisten] shutdown: closing all files...
+2016-04-08T12:22:48.598+0800 I STORAGE  [initandlisten] closeAllFiles() finished
+2016-04-08T12:22:48.599+0800 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2016-04-08T12:22:48.599+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
+2016-04-08T12:22:48.601+0800 I NETWORK  [conn13] end connection 127.0.0.1:56991 (1 connection now open)
+2016-04-08T12:23:06.253+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56992 #14 (2 connections now open)
+2016-04-08T12:23:06.255+0800 I ACCESS   [conn14] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:23:06.255+0800 I ACCESS   [conn14] Unauthorized not authorized on admin to execute command { replSetGetStatus: 1.0, forShell: 1.0 }
+2016-04-08T12:23:09.154+0800 I NETWORK  [conn14] end connection 127.0.0.1:56992 (1 connection now open)
+2016-04-08T12:23:54.722+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56993 #15 (2 connections now open)
+2016-04-08T12:23:54.735+0800 I ACCESS   [conn15] Successfully authenticated as principal admin on admin
+2016-04-08T12:23:59.177+0800 I NETWORK  [conn15] end connection 127.0.0.1:56993 (1 connection now open)
+2016-04-08T12:24:02.479+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56994 #16 (2 connections now open)
+2016-04-08T12:24:02.481+0800 I ACCESS   [conn16] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:24:02.481+0800 I ACCESS   [conn16] Unauthorized not authorized on admin to execute command { replSetGetStatus: 1.0, forShell: 1.0 }
+2016-04-08T12:24:13.954+0800 I NETWORK  [conn16] end connection 127.0.0.1:56994 (1 connection now open)
+2016-04-08T12:24:18.530+0800 I NETWORK  [conn9] end connection 192.168.99.1:52342 (0 connections now open)
+2016-04-08T12:24:19.712+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:52355 #17 (1 connection now open)
+2016-04-08T12:24:19.714+0800 I ACCESS   [conn17] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:24:19.715+0800 I ACCESS   [conn17] Unauthorized not authorized on admin to execute command { replSetGetStatus: 1.0, forShell: 1.0 }
+2016-04-08T12:24:23.217+0800 I NETWORK  [conn17] end connection 192.168.99.1:52355 (0 connections now open)
+2016-04-08T12:24:32.825+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:52356 #18 (1 connection now open)
+2016-04-08T12:24:32.848+0800 I ACCESS   [conn18] Successfully authenticated as principal admin on admin
+2016-04-08T12:24:39.956+0800 I NETWORK  [conn18] end connection 192.168.99.1:52356 (0 connections now open)
+2016-04-08T12:35:13.423+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:35:13.427+0800 I CONTROL  [initandlisten] MongoDB starting : pid=5 port=27017 dbpath=/data/db 64-bit host=92e0ecf23a20
+2016-04-08T12:35:13.427+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:35:13.427+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:35:13.428+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:35:13.429+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:35:13.429+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:35:13.429+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:35:13.430+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:35:13.430+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:35:13.431+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:35:13.431+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:35:13.432+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:35:13.432+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:35:13.432+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:35:13.433+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:35:13.433+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:35:13.444+0800 I INDEX    [initandlisten] allocating new ns file /data/db/local.ns, filling with zeroes...
+2016-04-08T12:35:13.473+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/local.0, filling with zeroes...
+2016-04-08T12:35:13.473+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T12:35:13.475+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/local.0, size: 64MB,  took 0 secs
+2016-04-08T12:35:13.476+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T12:35:25.842+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:52646 #1 (1 connection now open)
+2016-04-08T12:35:25.849+0800 I ACCESS   [conn1] SCRAM-SHA-1 authentication failed for admin on admin ; UserNotFound Could not find user admin@admin
+2016-04-08T12:35:25.851+0800 I NETWORK  [conn1] end connection 192.168.99.1:52646 (0 connections now open)
+2016-04-08T12:36:29.390+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56997 #2 (1 connection now open)
+2016-04-08T12:36:29.390+0800 I ACCESS   [conn2] note: no users configured in admin.system.users, allowing localhost access
+2016-04-08T12:36:29.392+0800 I ACCESS   [conn2] SCRAM-SHA-1 authentication failed for admin on admin ; UserNotFound Could not find user admin@admin
+2016-04-08T12:36:29.396+0800 I NETWORK  [conn2] end connection 127.0.0.1:56997 (0 connections now open)
+2016-04-08T12:36:35.317+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56998 #3 (1 connection now open)
+2016-04-08T12:36:35.319+0800 I ACCESS   [conn3] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:36:42.765+0800 I ACCESS   [conn3] Unauthorized not authorized on admin to execute command { listDatabases: 1.0 }
+2016-04-08T12:37:12.237+0800 I NETWORK  [conn3] end connection 127.0.0.1:56998 (0 connections now open)
+2016-04-08T12:39:23.003+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:39:23.007+0800 I CONTROL  [initandlisten] MongoDB starting : pid=6 port=27017 dbpath=/data/db 64-bit host=e9ca0e10115d
+2016-04-08T12:39:23.008+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:39:23.008+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:39:23.009+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:39:23.010+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:39:23.010+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:39:23.011+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:39:23.011+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:39:23.011+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:39:23.012+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:39:23.012+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:39:23.012+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:39:23.013+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:39:23.014+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:39:23.015+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:39:23.015+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:39:23.030+0800 I INDEX    [initandlisten] allocating new ns file /data/db/local.ns, filling with zeroes...
+2016-04-08T12:39:23.060+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/local.0, filling with zeroes...
+2016-04-08T12:39:23.061+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T12:39:23.063+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/local.0, size: 64MB,  took 0 secs
+2016-04-08T12:39:23.064+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T12:41:16.665+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:41:16.668+0800 I CONTROL  [initandlisten] MongoDB starting : pid=5 port=27017 dbpath=/data/db 64-bit host=3f25400ad689
+2016-04-08T12:41:16.670+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:41:16.670+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:41:16.670+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:41:16.670+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:41:16.671+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:41:16.671+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:41:16.671+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:41:16.671+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:41:16.672+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:41:16.672+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:41:16.672+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:41:16.672+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:41:16.672+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:41:16.672+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:41:16.672+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:41:16.687+0800 I INDEX    [initandlisten] allocating new ns file /data/db/local.ns, filling with zeroes...
+2016-04-08T12:41:16.714+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/local.0, filling with zeroes...
+2016-04-08T12:41:16.714+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T12:41:16.715+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/local.0, size: 64MB,  took 0 secs
+2016-04-08T12:41:16.716+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T12:43:42.728+0800 I NETWORK  [initandlisten] connection accepted from 172.17.0.1:38041 #1 (1 connection now open)
+2016-04-08T12:43:42.730+0800 I ACCESS   [conn1] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:43:42.731+0800 I ACCESS   [conn1] Unauthorized not authorized on admin to execute command { replSetGetStatus: 1.0, forShell: 1.0 }
+2016-04-08T12:43:44.630+0800 I NETWORK  [conn1] end connection 172.17.0.1:38041 (0 connections now open)
+2016-04-08T12:43:58.152+0800 I NETWORK  [initandlisten] connection accepted from 172.17.0.1:38043 #2 (1 connection now open)
+2016-04-08T12:43:58.154+0800 I ACCESS   [conn2] SCRAM-SHA-1 authentication failed for admin on admin ; UserNotFound Could not find user admin@admin
+2016-04-08T12:43:58.158+0800 I NETWORK  [conn2] end connection 172.17.0.1:38043 (0 connections now open)
+2016-04-08T12:44:16.180+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:52717 #3 (1 connection now open)
+2016-04-08T12:44:16.186+0800 I ACCESS   [conn3] SCRAM-SHA-1 authentication failed for admin on admin ; UserNotFound Could not find user admin@admin
+2016-04-08T12:44:16.187+0800 I NETWORK  [conn3] end connection 192.168.99.1:52717 (0 connections now open)
+2016-04-08T12:44:26.987+0800 I NETWORK  [initandlisten] connection accepted from 172.17.0.1:38045 #4 (1 connection now open)
+2016-04-08T12:44:26.989+0800 I ACCESS   [conn4] SCRAM-SHA-1 authentication failed for admin on admin ; UserNotFound Could not find user admin@admin
+2016-04-08T12:44:26.993+0800 I NETWORK  [conn4] end connection 172.17.0.1:38045 (0 connections now open)
+2016-04-08T12:44:32.986+0800 I NETWORK  [initandlisten] connection accepted from 172.17.0.1:38047 #5 (1 connection now open)
+2016-04-08T12:44:32.989+0800 I ACCESS   [conn5] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:44:32.990+0800 I ACCESS   [conn5] Unauthorized not authorized on admin to execute command { replSetGetStatus: 1.0, forShell: 1.0 }
+2016-04-08T12:44:37.996+0800 I NETWORK  [conn5] end connection 172.17.0.1:38047 (0 connections now open)
+2016-04-08T12:44:43.516+0800 I NETWORK  [initandlisten] connection accepted from 172.17.0.1:38049 #6 (1 connection now open)
+2016-04-08T12:44:43.518+0800 I ACCESS   [conn6] Unauthorized not authorized on admin to execute command { getLog: "startupWarnings" }
+2016-04-08T12:44:43.520+0800 I ACCESS   [conn6] Unauthorized not authorized on admin to execute command { replSetGetStatus: 1.0, forShell: 1.0 }
+2016-04-08T12:44:53.021+0800 I ACCESS   [conn6] Unauthorized not authorized on admin to execute command { listDatabases: 1.0 }
+2016-04-08T12:47:10.671+0800 I NETWORK  [conn6] end connection 172.17.0.1:38049 (0 connections now open)
+2016-04-08T12:47:17.365+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:47:17.368+0800 I CONTROL  [initandlisten] MongoDB starting : pid=98 port=27017 dbpath=/data/db 64-bit host=3f25400ad689
+2016-04-08T12:47:17.368+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:47:17.368+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:47:17.368+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:47:17.368+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:47:17.368+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:47:17.368+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:47:17.368+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:47:17.369+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:47:17.369+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:47:17.369+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:47:17.369+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:47:17.369+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:47:17.369+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:47:17.369+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:47:17.369+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:47:17.372+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+2016-04-08T12:47:17.373+0800 E NETWORK  [initandlisten]   addr already in use
+2016-04-08T12:47:17.381+0800 I CONTROL  [initandlisten] now exiting
+2016-04-08T12:47:17.381+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2016-04-08T12:47:17.382+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2016-04-08T12:47:17.382+0800 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2016-04-08T12:47:17.382+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-08T12:47:17.382+0800 I STORAGE  [initandlisten] shutdown: closing all files...
+2016-04-08T12:47:17.382+0800 I STORAGE  [initandlisten] closeAllFiles() finished
+2016-04-08T12:47:17.382+0800 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2016-04-08T12:47:17.382+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
+2016-04-08T12:47:35.258+0800 I NETWORK  [initandlisten] connection accepted from 172.17.0.1:38051 #7 (1 connection now open)
+2016-04-08T12:47:35.260+0800 I ACCESS   [conn7] SCRAM-SHA-1 authentication failed for admin on admin ; UserNotFound Could not find user admin@admin
+2016-04-08T12:47:35.266+0800 I NETWORK  [conn7] end connection 172.17.0.1:38051 (0 connections now open)
+2016-04-08T12:48:17.795+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:48:17.799+0800 I CONTROL  [initandlisten] MongoDB starting : pid=117 port=27017 dbpath=/data/db 64-bit host=3f25400ad689
+2016-04-08T12:48:17.799+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:48:17.800+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:48:17.801+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:48:17.801+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:48:17.801+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:48:17.801+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:48:17.801+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:48:17.801+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:48:17.802+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:48:17.802+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:48:17.802+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:48:17.803+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:48:17.803+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:48:17.803+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:48:17.803+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:48:17.808+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+2016-04-08T12:48:17.808+0800 E NETWORK  [initandlisten]   addr already in use
+2016-04-08T12:48:17.819+0800 I CONTROL  [initandlisten] now exiting
+2016-04-08T12:48:17.821+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2016-04-08T12:48:17.822+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2016-04-08T12:48:17.822+0800 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2016-04-08T12:48:17.822+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-08T12:48:17.823+0800 I STORAGE  [initandlisten] shutdown: closing all files...
+2016-04-08T12:48:17.824+0800 I STORAGE  [initandlisten] closeAllFiles() finished
+2016-04-08T12:48:17.824+0800 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2016-04-08T12:48:17.825+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
+2016-04-08T12:48:17.828+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57015 #8 (1 connection now open)
+2016-04-08T12:48:17.828+0800 I ACCESS   [conn8] note: no users configured in admin.system.users, allowing localhost access
+2016-04-08T12:48:17.840+0800 I INDEX    [conn8] allocating new ns file /data/db/admin.ns, filling with zeroes...
+2016-04-08T12:48:17.859+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/admin.0, filling with zeroes...
+2016-04-08T12:48:17.859+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T12:48:17.859+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/admin.0, size: 64MB,  took 0 secs
+2016-04-08T12:48:17.862+0800 I INDEX    [conn8] build index on: admin.system.users properties: { v: 1, unique: true, key: { user: 1, db: 1 }, name: "user_1_db_1", ns: "admin.system.users" }
+2016-04-08T12:48:17.862+0800 I INDEX    [conn8] 	 building index using bulk method
+2016-04-08T12:48:17.862+0800 I INDEX    [conn8] build index done.  scanned 0 total records. 0 secs
+2016-04-08T12:48:17.869+0800 I NETWORK  [conn8] end connection 127.0.0.1:57015 (0 connections now open)
+2016-04-08T12:48:20.911+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:48:20.915+0800 I CONTROL  [initandlisten] MongoDB starting : pid=136 port=27017 dbpath=/data/db 64-bit host=3f25400ad689
+2016-04-08T12:48:20.915+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:48:20.916+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:48:20.916+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:48:20.917+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:48:20.918+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:48:20.918+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:48:20.919+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:48:20.919+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:48:20.920+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:48:20.920+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:48:20.920+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:48:20.920+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:48:20.920+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:48:20.921+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:48:20.921+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:48:20.924+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+2016-04-08T12:48:20.925+0800 E NETWORK  [initandlisten]   addr already in use
+2016-04-08T12:48:20.938+0800 I CONTROL  [initandlisten] now exiting
+2016-04-08T12:48:20.939+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2016-04-08T12:48:20.939+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57016 #9 (1 connection now open)
+2016-04-08T12:48:20.939+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2016-04-08T12:48:20.940+0800 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2016-04-08T12:48:20.940+0800 I ACCESS   [conn9] Unauthorized not authorized on admin to execute command { createUser: "admin", pwd: "xxx", roles: [ { role: "root", db: "admin" } ], digestPassword: false, writeConcern: { w: "majority", wtimeout: 30000.0 } }
+2016-04-08T12:48:20.940+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-08T12:48:20.941+0800 I STORAGE  [initandlisten] shutdown: closing all files...
+2016-04-08T12:48:20.941+0800 I STORAGE  [initandlisten] closeAllFiles() finished
+2016-04-08T12:48:20.942+0800 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2016-04-08T12:48:20.943+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
+2016-04-08T12:48:20.945+0800 I NETWORK  [conn9] end connection 127.0.0.1:57016 (0 connections now open)
+2016-04-08T12:53:40.883+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:53:40.886+0800 I CONTROL  [initandlisten] MongoDB starting : pid=5 port=27017 dbpath=/data/db 64-bit host=491108bf8f0f
+2016-04-08T12:53:40.886+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:53:40.886+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:53:40.886+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:53:40.886+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:53:40.887+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:53:40.887+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:53:40.887+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:53:40.887+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:53:40.887+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:53:40.887+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:53:40.887+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:53:40.887+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:53:40.887+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:53:40.887+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:53:40.888+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:53:40.895+0800 I INDEX    [initandlisten] allocating new ns file /data/db/local.ns, filling with zeroes...
+2016-04-08T12:53:40.919+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/local.0, filling with zeroes...
+2016-04-08T12:53:40.919+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T12:53:40.920+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/local.0, size: 64MB,  took 0 secs
+2016-04-08T12:53:40.921+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T12:53:45.907+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57019 #1 (1 connection now open)
+2016-04-08T12:53:45.908+0800 I ACCESS   [conn1] note: no users configured in admin.system.users, allowing localhost access
+2016-04-08T12:53:45.909+0800 I NETWORK  [conn1] end connection 127.0.0.1:57019 (0 connections now open)
+2016-04-08T12:53:45.935+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57020 #2 (1 connection now open)
+2016-04-08T12:53:45.945+0800 I INDEX    [conn2] allocating new ns file /data/db/admin.ns, filling with zeroes...
+2016-04-08T12:53:45.963+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/admin.0, filling with zeroes...
+2016-04-08T12:53:45.964+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/admin.0, size: 64MB,  took 0 secs
+2016-04-08T12:53:45.965+0800 I INDEX    [conn2] build index on: admin.system.users properties: { v: 1, unique: true, key: { user: 1, db: 1 }, name: "user_1_db_1", ns: "admin.system.users" }
+2016-04-08T12:53:45.965+0800 I INDEX    [conn2] 	 building index using bulk method
+2016-04-08T12:53:45.965+0800 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2016-04-08T12:53:45.969+0800 I NETWORK  [conn2] end connection 127.0.0.1:57020 (0 connections now open)
+2016-04-08T12:54:22.610+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57021 #3 (1 connection now open)
+2016-04-08T12:54:22.622+0800 I ACCESS   [conn3] Successfully authenticated as principal admin on admin
+2016-04-08T12:54:24.845+0800 I NETWORK  [conn3] end connection 127.0.0.1:57021 (0 connections now open)
+2016-04-08T12:54:32.315+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:52784 #4 (1 connection now open)
+2016-04-08T12:54:32.338+0800 I ACCESS   [conn4] Successfully authenticated as principal admin on admin
+2016-04-08T12:54:35.005+0800 I NETWORK  [conn4] end connection 192.168.99.1:52784 (0 connections now open)
+2016-04-08T12:55:15.311+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T12:55:15.314+0800 I CONTROL  [initandlisten] MongoDB starting : pid=6 port=27017 dbpath=/data/db 64-bit host=06cd6a4d8de2
+2016-04-08T12:55:15.314+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T12:55:15.314+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:55:15.314+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:55:15.314+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T12:55:15.314+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:55:15.315+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:55:15.315+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T12:55:15.315+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T12:55:15.315+0800 I CONTROL  [initandlisten] 
+2016-04-08T12:55:15.315+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T12:55:15.315+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T12:55:15.315+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T12:55:15.315+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T12:55:15.315+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T12:55:15.316+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T12:55:15.323+0800 I INDEX    [initandlisten] allocating new ns file /data/db/local.ns, filling with zeroes...
+2016-04-08T12:55:15.348+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/local.0, filling with zeroes...
+2016-04-08T12:55:15.348+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T12:55:15.349+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/local.0, size: 64MB,  took 0 secs
+2016-04-08T12:55:15.350+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T12:55:20.332+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57023 #1 (1 connection now open)
+2016-04-08T12:55:20.332+0800 I ACCESS   [conn1] note: no users configured in admin.system.users, allowing localhost access
+2016-04-08T12:55:20.334+0800 I NETWORK  [conn1] end connection 127.0.0.1:57023 (0 connections now open)
+2016-04-08T12:55:20.361+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57024 #2 (1 connection now open)
+2016-04-08T12:55:20.372+0800 I INDEX    [conn2] allocating new ns file /data/db/admin.ns, filling with zeroes...
+2016-04-08T12:55:20.393+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/admin.0, filling with zeroes...
+2016-04-08T12:55:20.393+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/admin.0, size: 64MB,  took 0 secs
+2016-04-08T12:55:20.395+0800 I INDEX    [conn2] build index on: admin.system.users properties: { v: 1, unique: true, key: { user: 1, db: 1 }, name: "user_1_db_1", ns: "admin.system.users" }
+2016-04-08T12:55:20.395+0800 I INDEX    [conn2] 	 building index using bulk method
+2016-04-08T12:55:20.395+0800 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2016-04-08T12:55:20.398+0800 I NETWORK  [conn2] end connection 127.0.0.1:57024 (0 connections now open)
+2016-04-08T12:55:22.219+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:52806 #3 (1 connection now open)
+2016-04-08T12:55:22.242+0800 I ACCESS   [conn3] Successfully authenticated as principal admin on admin
+2016-04-08T12:56:17.418+0800 I NETWORK  [conn3] end connection 192.168.99.1:52806 (0 connections now open)
+2016-04-08T13:02:20.986+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:02:20.989+0800 I CONTROL  [initandlisten] MongoDB starting : pid=6 port=27017 dbpath=/data/db 64-bit host=6b233e99dd69
+2016-04-08T13:02:20.989+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:02:20.989+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:20.989+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:20.989+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:02:20.989+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:20.989+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:20.989+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:02:20.989+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:20.990+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:20.990+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:02:20.990+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:02:20.990+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:02:20.990+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:02:20.990+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:02:20.990+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:02:20.998+0800 I INDEX    [initandlisten] allocating new ns file /data/db/local.ns, filling with zeroes...
+2016-04-08T13:02:21.023+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/local.0, filling with zeroes...
+2016-04-08T13:02:21.023+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T13:02:21.024+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/local.0, size: 64MB,  took 0 secs
+2016-04-08T13:02:21.025+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:02:26.008+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57025 #1 (1 connection now open)
+2016-04-08T13:02:26.009+0800 I ACCESS   [conn1] note: no users configured in admin.system.users, allowing localhost access
+2016-04-08T13:02:26.010+0800 I NETWORK  [conn1] end connection 127.0.0.1:57025 (0 connections now open)
+2016-04-08T13:02:26.036+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57026 #2 (1 connection now open)
+2016-04-08T13:02:26.050+0800 I INDEX    [conn2] allocating new ns file /data/db/admin.ns, filling with zeroes...
+2016-04-08T13:02:26.068+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/admin.0, filling with zeroes...
+2016-04-08T13:02:26.069+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/admin.0, size: 64MB,  took 0 secs
+2016-04-08T13:02:26.070+0800 I INDEX    [conn2] build index on: admin.system.users properties: { v: 1, unique: true, key: { user: 1, db: 1 }, name: "user_1_db_1", ns: "admin.system.users" }
+2016-04-08T13:02:26.070+0800 I INDEX    [conn2] 	 building index using bulk method
+2016-04-08T13:02:26.070+0800 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2016-04-08T13:02:26.073+0800 I NETWORK  [conn2] end connection 127.0.0.1:57026 (0 connections now open)
+2016-04-08T13:02:26.395+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:02:26.397+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=6b233e99dd69
+2016-04-08T13:02:26.397+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:02:26.397+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:26.398+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:26.398+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:02:26.398+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:26.398+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:26.398+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:02:26.398+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:26.398+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:26.398+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:02:26.398+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:02:26.399+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:02:26.399+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:02:26.399+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:02:26.399+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:02:26.410+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:02:28.891+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:53247 #1 (1 connection now open)
+2016-04-08T13:02:28.914+0800 I ACCESS   [conn1] Successfully authenticated as principal admin on admin
+2016-04-08T13:02:31.414+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57027 #2 (2 connections now open)
+2016-04-08T13:02:31.937+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:02:31.940+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=6b233e99dd69
+2016-04-08T13:02:31.940+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:02:31.940+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:31.941+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:31.941+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:02:31.941+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:31.941+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:31.941+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:02:31.941+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:31.941+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:31.941+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:02:31.941+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:02:31.942+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:02:31.942+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:02:31.942+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:02:31.942+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:02:31.951+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:02:36.959+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57028 #1 (1 connection now open)
+2016-04-08T13:02:37.880+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:02:37.883+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=6b233e99dd69
+2016-04-08T13:02:37.883+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:02:37.883+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:37.883+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:37.883+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:02:37.883+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:37.883+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:37.884+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:02:37.884+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:37.884+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:37.884+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:02:37.884+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:02:37.884+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:02:37.884+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:02:37.884+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:02:37.885+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:02:37.894+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:02:42.903+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57029 #1 (1 connection now open)
+2016-04-08T13:02:44.620+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:02:44.622+0800 I CONTROL  [initandlisten] MongoDB starting : pid=6 port=27017 dbpath=/data/db 64-bit host=6b233e99dd69
+2016-04-08T13:02:44.622+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:02:44.623+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:44.623+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:44.623+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:02:44.623+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:44.623+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:44.623+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:02:44.623+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:44.623+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:44.624+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:02:44.624+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:02:44.624+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:02:44.624+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:02:44.624+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:02:44.624+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:02:44.633+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:02:49.649+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57030 #1 (1 connection now open)
+2016-04-08T13:02:52.969+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:02:52.971+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=6b233e99dd69
+2016-04-08T13:02:52.971+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:02:52.972+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:52.972+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:52.972+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:02:52.972+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:52.972+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:52.972+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:02:52.972+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:02:52.972+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:02:52.973+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:02:52.973+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:02:52.973+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:02:52.973+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:02:52.973+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:02:52.973+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:02:52.985+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:02:57.990+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57031 #1 (1 connection now open)
+2016-04-08T13:03:04.513+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:03:04.515+0800 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/data/db 64-bit host=6b233e99dd69
+2016-04-08T13:03:04.515+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:03:04.515+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:04.516+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:04.516+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:03:04.516+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:04.516+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:04.516+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:03:04.516+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:04.516+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:04.516+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:03:04.517+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:03:04.517+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:03:04.517+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:03:04.517+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:03:04.517+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:03:04.526+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:03:09.535+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57032 #1 (1 connection now open)
+2016-04-08T13:03:22.452+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:03:22.455+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=6b233e99dd69
+2016-04-08T13:03:22.455+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:03:22.455+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:22.455+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:22.455+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:03:22.455+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:22.455+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:22.456+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:03:22.456+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:22.456+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:22.456+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:03:22.456+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:03:22.456+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:03:22.456+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:03:22.456+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:03:22.456+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:03:22.467+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:03:28.359+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:03:28.362+0800 I CONTROL  [initandlisten] MongoDB starting : pid=5 port=27017 dbpath=/data/db 64-bit host=cf75e60218ac
+2016-04-08T13:03:28.362+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:03:28.362+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:28.362+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:03:28.363+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:03:28.370+0800 I INDEX    [initandlisten] allocating new ns file /data/db/local.ns, filling with zeroes...
+2016-04-08T13:03:28.392+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/local.0, filling with zeroes...
+2016-04-08T13:03:28.392+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T13:03:28.393+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/local.0, size: 64MB,  took 0 secs
+2016-04-08T13:03:28.395+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:03:33.382+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57033 #1 (1 connection now open)
+2016-04-08T13:03:33.382+0800 I ACCESS   [conn1] note: no users configured in admin.system.users, allowing localhost access
+2016-04-08T13:03:33.383+0800 I NETWORK  [conn1] end connection 127.0.0.1:57033 (0 connections now open)
+2016-04-08T13:03:33.410+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57034 #2 (1 connection now open)
+2016-04-08T13:03:33.421+0800 I INDEX    [conn2] allocating new ns file /data/db/admin.ns, filling with zeroes...
+2016-04-08T13:03:33.442+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/admin.0, filling with zeroes...
+2016-04-08T13:03:33.445+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/admin.0, size: 64MB,  took 0.002 secs
+2016-04-08T13:03:33.446+0800 I INDEX    [conn2] build index on: admin.system.users properties: { v: 1, unique: true, key: { user: 1, db: 1 }, name: "user_1_db_1", ns: "admin.system.users" }
+2016-04-08T13:03:33.446+0800 I INDEX    [conn2] 	 building index using bulk method
+2016-04-08T13:03:33.446+0800 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2016-04-08T13:03:33.450+0800 I NETWORK  [conn2] end connection 127.0.0.1:57034 (0 connections now open)
+2016-04-08T13:03:33.771+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:03:33.775+0800 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/data/db 64-bit host=cf75e60218ac
+2016-04-08T13:03:33.775+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:03:33.775+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:33.775+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:33.775+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:03:33.775+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:33.776+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:33.776+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:03:33.776+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:33.776+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:33.776+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:03:33.776+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:03:33.776+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:03:33.777+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:03:33.777+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:03:33.777+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:03:33.788+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:03:38.796+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57035 #1 (1 connection now open)
+2016-04-08T13:03:39.314+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:03:39.317+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=cf75e60218ac
+2016-04-08T13:03:39.317+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:03:39.317+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:39.317+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:39.317+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:03:39.317+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:39.317+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:39.317+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:03:39.318+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:39.318+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:39.318+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:03:39.318+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:03:39.318+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:03:39.318+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:03:39.318+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:03:39.318+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:03:39.328+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:03:44.338+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57036 #1 (1 connection now open)
+2016-04-08T13:03:45.259+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:03:45.261+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=cf75e60218ac
+2016-04-08T13:03:45.261+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:03:45.262+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:45.262+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:45.262+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:03:45.262+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:45.262+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:45.262+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:03:45.262+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:45.262+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:45.263+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:03:45.263+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:03:45.263+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:03:45.263+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:03:45.263+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:03:45.263+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:03:45.272+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:03:50.282+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57037 #1 (1 connection now open)
+2016-04-08T13:03:52.000+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:03:52.002+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=cf75e60218ac
+2016-04-08T13:03:52.002+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:03:52.002+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:52.003+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:52.003+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:03:52.003+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:52.003+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:52.003+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:03:52.003+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:03:52.003+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:03:52.004+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:03:52.004+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:03:52.004+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:03:52.004+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:03:52.004+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:03:52.004+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:03:52.013+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:03:54.342+0800 I NETWORK  [initandlisten] connection accepted from 192.168.99.1:53277 #1 (1 connection now open)
+2016-04-08T13:03:54.365+0800 I ACCESS   [conn1] Successfully authenticated as principal admin on admin
+2016-04-08T13:03:56.177+0800 I NETWORK  [conn1] end connection 192.168.99.1:53277 (0 connections now open)
+2016-04-08T13:03:57.029+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57038 #2 (1 connection now open)
+2016-04-08T13:04:00.353+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:04:00.355+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=cf75e60218ac
+2016-04-08T13:04:00.355+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:04:00.355+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:00.356+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:00.356+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:04:00.356+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:04:00.356+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:00.356+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:04:00.356+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:04:00.356+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:00.356+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:04:00.356+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:04:00.357+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:04:00.357+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:04:00.357+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:04:00.357+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:04:00.368+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:04:05.372+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57039 #1 (1 connection now open)
+2016-04-08T13:04:11.891+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:04:11.893+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=cf75e60218ac
+2016-04-08T13:04:11.893+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:04:11.893+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:11.893+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:11.894+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:04:11.894+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:04:11.894+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:11.894+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:04:11.894+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:04:11.894+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:11.894+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:04:11.894+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:04:11.894+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:04:11.894+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:04:11.895+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:04:11.895+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:04:11.905+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:04:16.916+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57040 #1 (1 connection now open)
+2016-04-08T13:04:29.831+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:04:29.834+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=cf75e60218ac
+2016-04-08T13:04:29.834+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:04:29.834+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:29.834+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:29.834+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:04:29.835+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:04:29.835+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:29.835+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:04:29.835+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:04:29.835+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:04:29.835+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:04:29.835+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:04:29.835+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:04:29.836+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:04:29.836+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:04:29.836+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:04:29.845+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:04:34.854+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57041 #1 (1 connection now open)
+2016-04-08T13:05:00.573+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:05:00.576+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=cf75e60218ac
+2016-04-08T13:05:00.576+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:05:00.576+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:05:00.576+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:05:00.576+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:05:00.576+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:05:00.577+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:05:00.577+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:05:00.577+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:05:00.577+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:05:00.577+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:05:00.577+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:05:00.577+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:05:00.577+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:05:00.577+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:05:00.577+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:05:00.588+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:05:05.595+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57042 #1 (1 connection now open)
+2016-04-08T13:05:56.911+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:05:56.914+0800 I CONTROL  [initandlisten] MongoDB starting : pid=6 port=27017 dbpath=/data/db 64-bit host=cf75e60218ac
+2016-04-08T13:05:56.914+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:05:56.914+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:05:56.914+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:05:56.914+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:05:56.914+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:05:56.915+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:05:56.915+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:05:56.915+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:05:56.915+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:05:56.915+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:05:56.915+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:05:56.915+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:05:56.915+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:05:56.915+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:05:56.916+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:05:56.925+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:06:01.933+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57043 #1 (1 connection now open)
+2016-04-08T13:06:18.851+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:06:18.854+0800 I CONTROL  [initandlisten] MongoDB starting : pid=5 port=27017 dbpath=/data/db 64-bit host=0873698ac47d
+2016-04-08T13:06:18.854+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:06:18.854+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:18.854+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:18.854+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:06:18.855+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:18.855+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:18.855+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:06:18.855+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:18.855+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:18.855+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:06:18.855+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:06:18.855+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:06:18.855+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:06:18.856+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:06:18.856+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:06:18.863+0800 I INDEX    [initandlisten] allocating new ns file /data/db/local.ns, filling with zeroes...
+2016-04-08T13:06:18.896+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/local.0, filling with zeroes...
+2016-04-08T13:06:18.896+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T13:06:18.896+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/local.0, size: 64MB,  took 0 secs
+2016-04-08T13:06:18.898+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:06:23.874+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57044 #1 (1 connection now open)
+2016-04-08T13:06:23.875+0800 I ACCESS   [conn1] note: no users configured in admin.system.users, allowing localhost access
+2016-04-08T13:06:23.876+0800 I NETWORK  [conn1] end connection 127.0.0.1:57044 (0 connections now open)
+2016-04-08T13:06:23.907+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57045 #2 (1 connection now open)
+2016-04-08T13:06:23.921+0800 I INDEX    [conn2] allocating new ns file /data/db/admin.ns, filling with zeroes...
+2016-04-08T13:06:23.946+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/admin.0, filling with zeroes...
+2016-04-08T13:06:23.946+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/admin.0, size: 64MB,  took 0 secs
+2016-04-08T13:06:23.948+0800 I INDEX    [conn2] build index on: admin.system.users properties: { v: 1, unique: true, key: { user: 1, db: 1 }, name: "user_1_db_1", ns: "admin.system.users" }
+2016-04-08T13:06:23.948+0800 I INDEX    [conn2] 	 building index using bulk method
+2016-04-08T13:06:23.948+0800 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2016-04-08T13:06:23.952+0800 I NETWORK  [conn2] end connection 127.0.0.1:57045 (0 connections now open)
+2016-04-08T13:06:24.277+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:06:24.280+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=0873698ac47d
+2016-04-08T13:06:24.280+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:06:24.280+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:24.280+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:24.280+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:06:24.280+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:24.280+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:24.281+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:06:24.281+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:24.281+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:24.281+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:06:24.281+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:06:24.281+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:06:24.281+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:06:24.281+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:06:24.282+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:06:24.292+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:06:29.296+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57046 #1 (1 connection now open)
+2016-04-08T13:06:29.809+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:06:29.812+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=0873698ac47d
+2016-04-08T13:06:29.812+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:06:29.812+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:29.812+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:29.812+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:06:29.812+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:29.812+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:29.812+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:06:29.813+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:29.813+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:29.813+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:06:29.813+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:06:29.813+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:06:29.813+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:06:29.813+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:06:29.813+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:06:29.823+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:06:34.833+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57047 #1 (1 connection now open)
+2016-04-08T13:06:35.750+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:06:35.753+0800 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/data/db 64-bit host=0873698ac47d
+2016-04-08T13:06:35.753+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:06:35.753+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:35.753+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:35.753+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:06:35.754+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:35.754+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:35.754+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:06:35.754+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:35.754+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:35.754+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:06:35.754+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:06:35.754+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:06:35.754+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:06:35.754+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:06:35.755+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:06:35.764+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:06:40.770+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57048 #1 (1 connection now open)
+2016-04-08T13:06:42.489+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:06:42.492+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=0873698ac47d
+2016-04-08T13:06:42.492+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:06:42.492+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:42.492+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:42.492+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:06:42.492+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:42.492+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:42.493+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:06:42.493+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:42.493+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:42.493+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:06:42.493+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:06:42.493+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:06:42.493+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:06:42.493+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:06:42.494+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:06:42.504+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:06:47.512+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57049 #1 (1 connection now open)
+2016-04-08T13:06:50.834+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:06:50.837+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=0873698ac47d
+2016-04-08T13:06:50.837+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:06:50.837+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:50.837+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:50.838+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:06:50.838+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:50.838+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:50.838+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:06:50.838+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:06:50.838+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:06:50.838+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:06:50.838+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:06:50.838+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:06:50.839+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:06:50.839+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:06:50.839+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:06:50.848+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:06:55.855+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57050 #1 (1 connection now open)
+2016-04-08T13:07:02.372+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:07:02.375+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=0873698ac47d
+2016-04-08T13:07:02.376+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:07:02.376+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:07:02.376+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:07:02.376+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:07:02.376+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:07:02.376+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:07:02.376+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:07:02.377+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:07:02.377+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:07:02.377+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:07:02.377+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:07:02.377+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:07:02.377+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:07:02.377+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:07:02.377+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:07:02.387+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:07:07.397+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57051 #1 (1 connection now open)
+2016-04-08T13:11:06.362+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:11:06.364+0800 I CONTROL  [initandlisten] MongoDB starting : pid=6 port=27017 dbpath=/data/db 64-bit host=dd1fdee9f866
+2016-04-08T13:11:06.365+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:11:06.365+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:06.365+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:06.365+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:11:06.365+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:06.365+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:06.365+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:11:06.365+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:06.365+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:06.365+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:11:06.366+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:11:06.366+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:11:06.366+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:11:06.366+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:11:06.366+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:11:06.374+0800 I INDEX    [initandlisten] allocating new ns file /data/db/local.ns, filling with zeroes...
+2016-04-08T13:11:06.395+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/local.0, filling with zeroes...
+2016-04-08T13:11:06.395+0800 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2016-04-08T13:11:06.395+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/local.0, size: 64MB,  took 0 secs
+2016-04-08T13:11:06.397+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:11:11.383+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57056 #1 (1 connection now open)
+2016-04-08T13:11:11.383+0800 I ACCESS   [conn1] note: no users configured in admin.system.users, allowing localhost access
+2016-04-08T13:11:11.385+0800 I NETWORK  [conn1] end connection 127.0.0.1:57056 (0 connections now open)
+2016-04-08T13:11:11.410+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57057 #2 (1 connection now open)
+2016-04-08T13:11:11.421+0800 I INDEX    [conn2] allocating new ns file /data/db/admin.ns, filling with zeroes...
+2016-04-08T13:11:11.440+0800 I STORAGE  [FileAllocator] allocating new datafile /data/db/admin.0, filling with zeroes...
+2016-04-08T13:11:11.440+0800 I STORAGE  [FileAllocator] done allocating datafile /data/db/admin.0, size: 64MB,  took 0 secs
+2016-04-08T13:11:11.442+0800 I INDEX    [conn2] build index on: admin.system.users properties: { v: 1, unique: true, key: { user: 1, db: 1 }, name: "user_1_db_1", ns: "admin.system.users" }
+2016-04-08T13:11:11.442+0800 I INDEX    [conn2] 	 building index using bulk method
+2016-04-08T13:11:11.442+0800 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2016-04-08T13:11:11.445+0800 I NETWORK  [conn2] end connection 127.0.0.1:57057 (0 connections now open)
+2016-04-08T13:11:11.759+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:11:11.762+0800 I CONTROL  [initandlisten] MongoDB starting : pid=6 port=27017 dbpath=/data/db 64-bit host=dd1fdee9f866
+2016-04-08T13:11:11.762+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:11:11.762+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:11.762+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:11.762+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:11:11.762+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:11.762+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:11.763+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:11:11.763+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:11.763+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:11.763+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:11:11.763+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:11:11.763+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:11:11.763+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:11:11.763+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:11:11.764+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:11:11.773+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:11:16.781+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57058 #1 (1 connection now open)
+2016-04-08T13:11:17.299+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:11:17.301+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=dd1fdee9f866
+2016-04-08T13:11:17.302+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:11:17.302+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:17.302+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:17.302+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:11:17.302+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:17.302+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:17.302+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:11:17.302+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:17.302+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:17.303+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:11:17.303+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:11:17.303+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:11:17.303+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:11:17.303+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:11:17.303+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:11:17.313+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:11:22.322+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57059 #1 (1 connection now open)
+2016-04-08T13:11:23.241+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:11:23.244+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=dd1fdee9f866
+2016-04-08T13:11:23.244+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:11:23.244+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:23.244+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:23.244+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:11:23.244+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:23.244+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:23.245+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:11:23.245+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:23.245+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:23.245+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:11:23.245+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:11:23.245+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:11:23.245+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:11:23.245+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:11:23.246+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:11:23.255+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:11:28.266+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57060 #1 (1 connection now open)
+2016-04-08T13:11:30.009+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:11:30.012+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=dd1fdee9f866
+2016-04-08T13:11:30.012+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:11:30.012+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:30.012+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:30.012+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:11:30.012+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:30.012+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:30.013+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:11:30.013+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:30.013+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:30.013+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:11:30.013+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:11:30.013+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:11:30.013+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:11:30.013+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:11:30.014+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:11:30.023+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:11:35.030+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57061 #1 (1 connection now open)
+2016-04-08T13:11:38.349+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:11:38.352+0800 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/data/db 64-bit host=dd1fdee9f866
+2016-04-08T13:11:38.352+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:11:38.352+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:38.352+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:38.352+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:11:38.353+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:38.353+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:38.353+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:11:38.353+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:38.353+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:38.353+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:11:38.353+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:11:38.353+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:11:38.354+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:11:38.354+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:11:38.354+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:11:38.364+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:11:43.374+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57062 #1 (1 connection now open)
+2016-04-08T13:11:49.890+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:11:49.893+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=dd1fdee9f866
+2016-04-08T13:11:49.893+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:11:49.893+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:49.893+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:49.893+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:11:49.894+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:49.894+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:49.894+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:11:49.894+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:11:49.894+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:11:49.894+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:11:49.894+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:11:49.894+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:11:49.894+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:11:49.895+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:11:49.895+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:11:49.904+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:11:54.913+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57063 #1 (1 connection now open)
+2016-04-08T13:12:07.835+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:12:07.838+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=dd1fdee9f866
+2016-04-08T13:12:07.838+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:12:07.838+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:12:07.838+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:12:07.838+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:12:07.838+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:12:07.839+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:12:07.839+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:12:07.839+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:12:07.839+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:12:07.839+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:12:07.839+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:12:07.839+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:12:07.839+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:12:07.840+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:12:07.840+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:12:07.850+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:12:12.857+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57064 #1 (1 connection now open)
+2016-04-08T13:12:38.580+0800 I CONTROL  ***** SERVER RESTARTED *****
+2016-04-08T13:12:38.584+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7 port=27017 dbpath=/data/db 64-bit host=dd1fdee9f866
+2016-04-08T13:12:38.584+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-04-08T13:12:38.584+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:12:38.584+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:12:38.584+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-08T13:12:38.584+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:12:38.584+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:12:38.584+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-08T13:12:38.585+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-08T13:12:38.585+0800 I CONTROL  [initandlisten] 
+2016-04-08T13:12:38.585+0800 I CONTROL  [initandlisten] db version v3.0.0
+2016-04-08T13:12:38.585+0800 I CONTROL  [initandlisten] git version: a841fd6394365954886924a35076691b4d149168
+2016-04-08T13:12:38.585+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-08T13:12:38.585+0800 I CONTROL  [initandlisten] build info: Linux ip-10-179-177-12 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-04-08T13:12:38.585+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-08T13:12:38.585+0800 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, security: { authorization: "enabled" }, storage: { dbPath: "/data/db", journal: { enabled: false } }, systemLog: { destination: "file", logAppend: true, path: "/data/mongodb/mongod.log" } }
+2016-04-08T13:12:38.595+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-04-08T13:12:43.602+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57065 #1 (1 connection now open)

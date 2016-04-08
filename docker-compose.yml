@@ -51,12 +51,11 @@ nginx:
 #     restart: always
 mongo:
     build: ./images/mongo
-    container_name: mongo
+    container_name: tsb_mongo
     ports:
         - "27017:27017"
     volumes:
-        - ./volumes/mongo/log:/var/log/mongodb
-        - ./volumes/mongo/data:/var/lib/mongodb
+        - ./volumes/mongo/log:/data/mongodb
     environment:
         MONGODB_DATABASE: admin
         MONGODB_USER: admin
