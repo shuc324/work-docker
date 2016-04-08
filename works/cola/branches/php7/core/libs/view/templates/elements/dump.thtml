@@ -1,0 +1,21 @@
+<?php
+/* SVN FILE: $Id: dump.thtml 4409 2007-02-02 13:20:59Z phpnut $ */
+/**
+ *
+ * PHP versions 4 and 5
+ *
+ * @package			cola
+ * @subpackage		cola.core.libs.view.templates.elements
+ * @since			ColaPHP(tm) v 0.10.5.1782
+ * @version			$Revision: 4409 $
+ * @modifiedby		$LastChangedBy: phpnut $
+ * @lastmodified	$Date: 2007-02-02 07:20:59 -0600 (Fri, 02 Feb 2007) $
+ * @license			http://www.opensource.org/licenses/mit-license.php The MIT License
+ */
+?>
+<div>
+	<h2>Controller dump:</h2>
+		<pre>
+			<?php print_r($this->controller); ?>
+		</pre>
+</div>
